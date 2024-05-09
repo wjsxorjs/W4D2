@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>E7_Registry</title>
+</head>
+<body>
+    <article>
+        <header>
+            <h2>폼 연습</h2>
+        </header>
+        <div>
+            <form action="" method="">
+                <!-- input에서 type을 생략하면 기본이 type="text"다 -->
+                <input type="text" name="s1"/>
+                <br/>
+                <select name="s2" id="s2">
+                    <option value="seoul">서울</option>
+                    <option value="incheon">인천</option>
+                    <option value="gyeonggi">경기</option>
+                    <option selected>::선택::</option>
+                </select>
+                <br/><br/><br/>
+                <!--
+                    체크박스들은 하나의 그룹을 구분하는 것이 name으로 구분한다.
+                    그래서 하나인 그룹은 같은 name을 갖는다.
+                    이름이 같은 인자들은 서버에서 하나의 배열로 인식되어 받는다.
+                -->
+                
+                <input type="checkbox" name="hobby" id="cb1" value="1">
+                <label for="cb1">음악감상</label>
+                &nbsp;&nbsp;
+                <input type="checkbox" name="hobby" id="cb2" value="2">
+                <label for="cb2">영화감상</label>
+                &nbsp;&nbsp;
+                <input type="checkbox" name="hobby" id="cb3" value="3">
+                <label for="cb3">독서</label>
+                &nbsp;&nbsp;
+                <input type="checkbox" name="hobby" id="cb4" value="4">
+                <label for="cb4">게임</label>
+                <br/><br/>
+                <select name="phone">
+                    <option value="010">010</option>
+                    <option value="017">017</option>
+                    <option value="019">019</option>
+                </select>
+                <label>-</label>
+                <input type="text" name="phone">
+                <label>-</label>
+                <input type="text" name="phone">
+
+            </form>
+        </div>
+    </article>
+</body>
+</html>

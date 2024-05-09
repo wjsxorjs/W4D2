@@ -4,11 +4,37 @@
 <meta charset="UTF-8">
 <title>E6_Form</title>
 <style>
-    #s_id, #s_pw{
+    #s_id, #s_pw, #s_id2, #s_pw2{
         width: 106px;
         padding: 6px;
-        margin-bottom: 10px;
     }
+
+    #s_id2, #s_pw2{
+        border: 2px solid rgb(103, 103, 103);
+        border-radius: 10px;
+        ;
+    }
+
+    #d2>table>caption{
+        text-indent: -9999px;
+    }
+
+    #d2 th{
+        text-align: right;
+    }
+
+    #d2 th, #d2 td{
+        vertical-align: center;
+    }
+    
+    #d2 label{
+        margin-right: 8px;
+    }
+
+    #d2 tfoot>tr>td{
+        text-align: center;
+    }
+
 </style>
 </head> 
 <body>
@@ -33,6 +59,39 @@
                 <label for="s_pw">비밀번호: </label>
                 <input type="password" id="s_pw" name="m_pw" placeholder="비밀번호"><br/>
                 <input type="button" value="로그인">
+            </form>
+        </div>
+        <div id="d2">
+            <form action="" method="">
+                <table>
+                    <caption>로그인 폼 테이블</caption>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <label for="s_id2">아이디: </label>
+                            </th>
+                            <td>
+                                <input type="text" id="s_id2" name="m_id" placeholder="아이디">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="s_pw2">비밀번호: </label>
+                            </th>
+                            <td>
+                                <input type="password" id="s_pw2" name="m_pw" placeholder="비밀번호">
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">
+                                <button type="button">로그인</button>
+                                <button type="button">회원가입</button>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
             </form>
         </div>
     </article>
