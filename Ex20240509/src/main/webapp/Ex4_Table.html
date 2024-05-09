@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex4_Table</title>
+<style>
+    /* 현재 문서에서 table이라는 태그를 만나면 수행 */
+    table {
+        border: 1px solid rgb(0, 0, 0); /*2px 검은색 단선*/
+        width: 500px;
+        border-spacing: 0px;
+    }
+
+    /* th. td 태그를 만나면 수행 */
+    th,td{
+        border: 1px solid rgb(0, 0, 0); /*2px 검은색 단선*/
+        padding: 5px;
+    }
+
+    /* table이라는 태그들 중 아이디가 t2이 테이블을 따로 선택하여 처리함.
+    현재 문서자체에서 기억하고 있는 보더개념을 무너뜨린다.*/
+    table#t2{
+        border-collapse: collapse;
+    }
+
+
+</style>
+</head>
+<body>
+    <article>
+        <header>
+            <h2>테이블 연습</h2>
+        </header>
+        <div>
+            <table id="t1">
+                <caption>사원정보테이블</caption>
+                <thead>
+                    <tr>
+                        <th>사번</th>
+                        <th>이름</th>
+                        <th>직종</th>
+                        <th>이메일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7689</td>
+                        <td>Smith</td>
+                        <td>DEVELOP</td>
+                        <td>DevSmith@korea.com</td>
+                    </tr>
+                    <tr>
+                        <td>7788</td>
+                        <td>마루치</td>
+                        <td>DEVELOP</td>
+                        <td>akfncl@korea.com</td>
+                    </tr>
+                    <tr>
+                        <td>7236</td>
+                        <td>Michael</td>
+                        <td>DEVELOP</td>
+                        <td>MicDev@korea.com</td>
+                    </tr>
+                    <tr>
+                        <td>7998</td>
+                        <td>Mike</td>
+                        <td>SALESMAN</td>
+                        <td>SpeechWMike@korea.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br/><br/>
+        <div>
+            <table id="t2">
+                <caption>사원정보테이블</caption>
+                <thead>
+                    <tr>
+                        <th>사번</th>
+                        <th>이름</th>
+                        <th>직종</th>
+                        <th>이메일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7689</td>
+                        <td>Smith</td>
+                        <td>DEVELOP</td>
+                        <td>DevSmith@korea.com</td>
+                    </tr>
+                    <tr>
+                        <td>7788</td>
+                        <td>마루치</td>
+                        <td>DEVELOP</td>
+                        <td>akfncl@korea.com</td>
+                    </tr>
+                    <tr>
+                        <td>7236</td>
+                        <td>Michael</td>
+                        <td>DEVELOP</td>
+                        <td>MicDev@korea.com</td>
+                    </tr>
+                    <tr>
+                        <td>7998</td>
+                        <td>Mike</td>
+                        <td>SALESMAN</td>
+                        <td>SpeechWMike@korea.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </article>
+</body>
+</html>
