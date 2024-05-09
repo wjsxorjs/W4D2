@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex5_Table</title>
+<style>
+    /* 현재문서에서 아이디가 t1인 요소를 만날 때 수행(id선택자) */
+    table#t1{
+        width: 600px;
+        border-collapse: collapse;
+    }
+
+    table#t1 th, table#t1 td{ /*(자손 선택자)*/
+        border: 1px solid black;
+        padding: 6px; /*top right bottom left*/
+    }
+
+    /* 아이디가 t1인 요소의 자식들 중 tfoot의 자식에서 tr, 그리고
+        그 tr의 자식들 중 td에게 적용
+    */
+    #t1>tfoot>tr>td{ /*(자식 선택자)*/
+        border: none;
+        text-align: right;
+    }
+
+
+
+</style>
+</head>
+<body>
+    <article>
+        <header>
+            <h2>테이블 연습</h2>
+        </header>
+        <div>
+            <table id="t1">
+                <caption>연습용테이블</caption>
+                <colgroup>
+                    <col width="100px"/>
+                    <col width="*"/>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>제목</th>
+                        <td>연습입니다.</td>
+                    </tr>
+                    <tr>
+                        <th>글쓴이</th>
+                        <td>이도</td>
+                    </tr>
+                    <tr>
+                        <th>등록일</th>
+                        <td>2024-05-09</td>
+                    </tr>
+                    <tr>
+                        <th>내용</th>
+                        <td>
+                            여기는 글 내용입니다. 그리고<br/>
+                            연습으로 글을 써봅니다. 잘 써집니다.
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="확인">
+                            &nbsp;
+                            <button type="button">뒤로</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </article>
+</body>
+</html>
